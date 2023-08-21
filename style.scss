@@ -1,6 +1,21 @@
 $background-color: #FAFAFF;
 $comp-blue: #1010FF;
 $text-black: #2A2A2A;
+$faint-grey: #E9E9EE;
+
+@font-face {
+    font-family: "roboto-reg";
+    src: url(./Fonts/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: "roboto-med";
+    src: url(./Fonts/Roboto-Medium.ttf)
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url(./Fonts/Roboto-Bold.ttf)
+}
+
 
 @mixin flex-box($h-align,$v-align, $f-direction){
     display: flex;
@@ -22,25 +37,60 @@ body{
 }
 
 .nav{
-    width: 100%;
+    width: 1400px;
     height: 110px;
     margin-bottom: 40px;
     padding-bottom: 10px;
 
     border-bottom: 2px solid $text-black;
 
+    @include flex-box(center, center, row);
+
+    .nav-content{
+        width: 1200px;
+        @include flex-box(space-between, center, row);
+        .nav-menu{
+            .btn-nav{
+                font-family: roboto-bold, Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                border: none;
+                color: $text-black;
+                padding: 6px 0px;
+                margin-right: 30px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 18px;
+                background-color: $background-color;
+            }
+    
+            .services{
+                border-bottom: 2px solid $comp-blue;
+            }
+            .contact{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.footer{
+    width: 1400px;
+    height: 100px;
+    box-sizing: border-box;
+    border-top: 2px solid $faint-grey;
+
     @include flex-box(space-between, center, row);
 
-    .nav-menu{
-        .btn-nav{
-            border: none;
-            color: $text-black;
-            padding: 15px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-        }
+    font-size: 14px;
+    padding: 0 95px;
+
+    .contact-details{
+        font-family: roboto-med, Arial, Helvetica, sans-serif;
+    }
+    .copyright-notice{
+        font-family: roboto-reg, Arial, Helvetica, sans-serif;
+        width: 280px;
+        text-align: center;
     }
 }
 
