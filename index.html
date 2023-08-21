@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./Javascript/jquery.js"></script>
+    <script src="./Javascript/myJavascript.js"></script>
     <title>Installations Network Technologies</title>
 </head>
 <body>
@@ -14,15 +16,32 @@
                     <img class="logo" src="./images/logo-sml.png">
                 </div>
                 <div class="nav-menu">
-                    <button class="btn-nav home" id="home">Home</button>
-                    <button class="btn-nav services" id="services">Services</button>                
-                    <button class="btn-nav about" id="about">About</button>                
-                    <button class="btn-nav contact" id="contact">Contact</button>
+                    <button class="btn-nav home" id="home">
+                        <p>Home</p>
+                        <div class="border homeB"></div>
+                    </button>
+                    <button class="btn-nav services" id="services">
+                        <p>Services</p>
+                        <div class="border servicesB"></div>
+                    </button>                
+                    <button class="btn-nav about" id="about">
+                        <p>About</p>
+                        <div class="border aboutB"></div>
+                    </button>                
+                    <button class="btn-nav contact" id="contact">
+                        <p>Contact</p>
+                        <div class="border contactB"></div></button>
                 </div>
             </div>
         </div>
         <div class="main">
-            <h1>MAIN</h1>
+            <div class="homePage" id="homePage">
+                <div class="banner">
+                    <img src="./Images/Banner3.png">
+                </div>
+                <div class="company-description"></div>
+                <div class="projects"></div>
+            </div>
         </div>
         <div class="footer">
             <div class="contact-details">
