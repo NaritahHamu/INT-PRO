@@ -394,9 +394,9 @@ body{
     }
 
     .company-details-container{
-        max-width: 1000px;
+        max-width: 1020px;
         width: 100%;
-        margin: 0 0 40px 0;
+        margin: 0 0 20px 0;
         text-align: center;
 
         @include flex-box(center, center, row);
@@ -462,8 +462,13 @@ body{
 
     }
 
-            .google-map-container{
-            max-width: 1000px;
-            width: 100%;
+        .google-map-container{
+        max-width: 1000px;
+        width: 100%;
+        margin-bottom: 40px;
+
+        #map-container{
+            visibility: hidden !important; 
         }
+    }
 }
