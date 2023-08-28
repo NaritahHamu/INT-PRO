@@ -275,6 +275,12 @@ body{
             width: 330px;
             height: 330px;
             background-color: lightcoral;
+            overflow: hidden;
+
+            img{
+                max-width: 120%;
+                height: auto;
+            }
         }
     }
 }

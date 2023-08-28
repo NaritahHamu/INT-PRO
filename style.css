@@ -264,6 +264,11 @@ body {
   width: 330px;
   height: 330px;
   background-color: lightcoral;
+  overflow: hidden;
+}
+.servicesPage .service-pictures-container .service-picture img {
+  max-width: 120%;
+  height: auto;
 }
 
 .aboutPage {
