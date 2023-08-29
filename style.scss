@@ -87,6 +87,9 @@ body{
             .contact{
                 margin-right: 0;
             }
+            .active .border{
+                width: 100%;               
+            }
         }
     }
 }
@@ -362,7 +365,7 @@ body{
                 background-position: center;
             }
             .prj-1{
-                background-image: url(./Images/AboutProjects/prj1.png);
+                background-image: url(./Images/AboutProjects/prj2.png);
             }
             .prj-2{
                 background-image: url(./Images/AboutProjects/prj2.png);
@@ -477,4 +480,11 @@ body{
             visibility: hidden !important; 
         }
     }
+}
+
+.displayHidden{
+    display: none;
+}
+.displayShow{
+    display: flex;
 }

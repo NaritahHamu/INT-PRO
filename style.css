@@ -79,6 +79,9 @@ body {
 .nav .nav-content .nav-menu .contact {
   margin-right: 0;
 }
+.nav .nav-content .nav-menu .active .border {
+  width: 100%;
+}
 
 .footer {
   width: 1400px;
@@ -356,7 +359,7 @@ body {
   background-position: center;
 }
 .aboutPage .about-gallery .column .prj-1 {
-  background-image: url(./Images/AboutProjects/prj1.png);
+  background-image: url(./Images/AboutProjects/prj2.png);
 }
 .aboutPage .about-gallery .column .prj-2 {
   background-image: url(./Images/AboutProjects/prj2.png);
@@ -461,4 +464,12 @@ body {
 }
 .contactPage .google-map-container #map-container {
   visibility: hidden !important;
+}
+
+.displayHidden {
+  display: none;
+}
+
+.displayShow {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
